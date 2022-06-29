@@ -1,0 +1,24 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 24/11/2021
+// Seção de Declarações 
+var
+vel, multa: inteiro
+inicio
+// Seção de Comandos 
+   escreval ("---------------")
+   escreval ("    C T T U    ")
+   escreval ("---------------")
+   
+   escreva ("Qual a velocidade (km/h) do seu carro? ")
+   leia (vel)
+   multa <- (vel - 80) * 5
+   se (vel <= 80) entao
+      escreval ("Você estava dentro do limite e não foi multado")
+   senao
+        se (vel > 80) entao
+           escreval ("Você estava acima do limite estabelecido e foi multado em R$", multa)
+        fimse
+   fimse
+fimalgoritmo

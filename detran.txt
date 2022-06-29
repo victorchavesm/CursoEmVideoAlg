@@ -1,0 +1,34 @@
+algoritmo "detran"
+// Função :
+// Autor :
+// Data : 20/10/2021
+// Seção de Declarações 
+var
+   nasc, atual, idade, restam: real
+
+inicio
+// Seção de Comandos 
+
+   escreval ("------")
+   escreval ("DETRAN")
+   escreval ("------")
+   escreval ("Em que ano nós estamos? ")
+   leia (atual)
+   escreval ("Em que ano você nasceu? ")
+   leia (nasc)
+   idade <- atual - nasc
+   escreval ("Sua idade é: " , idade)
+   se idade >= 18 entao
+      escreval ("Você está apto a tirar habilitação")
+   senao
+        escreva ("Você não está apto a tirar habilitação ")
+                 fimse
+   se idade < 18 entao
+   restam <- 18 - idade
+          escreval ("e ainda restam" , restam , " anos para ficar apto")
+                 fimse
+   escreval ("------------------------------")
+   escreval ("O DETRAN AGRADECE SUA ATENÇÃO")
+   escreval ("-------------------------------")
+
+fimalgoritmo

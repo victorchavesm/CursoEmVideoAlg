@@ -1,0 +1,24 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 18/01/2022
+// Seção de Declarações 
+var
+   cont, N, F: inteiro
+   R: caractere
+inicio
+// Seção de Comandos
+repita
+   escreval ("Digite um número inteiro :")
+   leia (N)
+   cont <- N
+   F <- 1
+   repita
+         F <- F * Cont
+         cont <- cont-1
+         ate (cont<1)
+   escreval ("O valor fatorial de ", N, " é igual a ", F)
+   escreval ("Quer continuar?[S/N]")
+   leia (R)
+ate (R = "N")
+fimalgoritmo

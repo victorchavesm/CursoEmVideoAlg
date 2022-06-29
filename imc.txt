@@ -1,0 +1,30 @@
+algoritmo "MeuNome"
+// Função :
+// Autor :
+// Data : 18/10/2021
+// Seção de Declarações
+var
+nome: caractere
+n1, n2, S: Real
+inicio
+// Seção de Comandos
+   escreval("Digite seu nome:")
+   leia (nome)
+   escreval ("Seja bem vindo, " , nome , "!")
+   escreval ("Muito prazer!")
+   escreval ("Qual o seu peso? (em kg)")
+   leia (n1)
+   escreval ("Qual a sua altura? (em metros)")
+   leia (n2)
+   S <- n1 / n2^2    (S:5:2)
+   escreval ("Seu IMC é: " , S:5:2)
+   se (S) < 18.5 entao
+      escreval ( nome, ", seu IMC está abaixo do ideal")
+            fimse
+   se (S) > 25 entao
+      escreval ( nome , ", seu IMC está acima do ideal")
+            fimse
+   se  (S >19) e (S <24.9) entao
+       escreval ( nome , ", seu IMC está dentro do ideal.")
+            fimse
+fimalgoritmo

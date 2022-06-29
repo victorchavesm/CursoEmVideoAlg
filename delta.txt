@@ -1,0 +1,19 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 02/11/2021
+// Seção de Declarações 
+var
+  A, B, C, delta: real
+inicio
+// Seção de Comandos 
+escreva ("Digite um número: ")
+leia (A)
+escreva ("Digite outro número: ")
+leia (B)
+escreva ("Digite outro número: ")
+leia (C)
+delta <- (B^²) - (4*A*C)
+leia (delta)
+escreva ("O valor de delta é", delta)
+fimalgoritmo

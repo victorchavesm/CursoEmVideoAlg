@@ -1,0 +1,27 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 25/11/2021
+// Seção de Declarações 
+var
+  n1, n2: inteiro
+inicio
+// Seção de Comandos 
+escreva ("Digite um número: " )
+leia (n1)
+escreva ("Digite outro número: ")
+leia (n2)
+
+se (n1) > (n2) entao
+   escreva ("O primeiro valor é maior")
+senao
+     se (n2) > (n1) entao
+          escreva ("O segundo valor é maior")
+     senao
+          se (n1) = (n2) entao
+             escreva ("Não existe valor maior, os dois valores são iguais")
+          fimse
+     fimse
+fimse
+
+fimalgoritmo

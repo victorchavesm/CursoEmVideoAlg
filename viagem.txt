@@ -1,0 +1,38 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 24/11/2021
+// Seção de Declarações 
+var
+dest: inteiro
+valor: real
+inicio
+// Seção de Comandos 
+escreval ("--------------------------")
+escreval ("          C V C           ")
+escreval ("--------------------------")
+escreval ("Qual destino da sua viagem?")
+escreval ("[1] Brasília")
+escreval ("[2] Petrolina")
+escreval ("[3] Jõao Pessoa")
+escreval ("[4] São Paulo")
+escreval ("[5] Rio de Janeiro")
+leia (dest)
+escolha (dest)
+caso 1
+valor <- 2120 * 0.5
+escreva ("Para esse destino, sua viagem sairá por R$" , valor)
+caso 2
+valor <- 715 * 0.5
+escreva ("Para esse destino, sua viagem sairá por R$" , valor)
+caso 3
+valor <- 120 * 0.45
+escreva ("Para esse destino, sua viagem sairá por R$" , valor)
+caso 4
+valor <- 2600 * 0.5
+escreva ("Para esse destino, sua viagem sairá por R$" , valor)
+caso 5
+valor <- 3370 * 0.5
+escreva ("Para esse destino, sua viagem sairá por R$" , valor)
+fimescolha
+fimalgoritmo

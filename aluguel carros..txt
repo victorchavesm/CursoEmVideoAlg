@@ -1,0 +1,47 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 13/12/2021
+// Seção de Declarações 
+var
+C: inteiro
+dias, preco, dist: real
+inicio
+// Seção de Comandos 
+   escreval ("-----------------")
+   escreval (" L O C A L I Z A ")
+   escreval ("-----------------")
+   escreval ("Bem vindo à Localiza aluguel de carros!")
+   escreva ("Quantos dias você passou com o carro? ")
+   leia (dias)
+   escreva ("Quantos Km foram percorridos? ")
+   leia (dist)
+   escreval ("Escolha o tipo de carro que você alugou: ")
+   escreval ("[1] para Carros Populares (R$ 90,00/dia)")
+   escreval ("[2] para Carros de Luxo (R$ 150,00/dia)")
+            leia (C)
+            escolha C
+            caso 1
+                 se (dist < 100) entao
+                    dist <- dist*0.20
+                 senao
+                      se (dist >= 100) entao
+                      dist <- dist*0.10
+                      fimse
+                 fimse
+            preco <- 90*dias + dist
+            caso 2
+                 se (dist < 200) entao
+                    dist <- dist*0.30
+                 senao
+                      se (dist >= 200) entao
+                      dist <- dist*0.25
+                      fimse
+                 fimse
+            preco <- 150*dias + dist
+            fimescolha
+
+            
+   escreval ("O preço final foi: R$", preco)
+
+fimalgoritmo

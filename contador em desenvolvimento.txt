@@ -1,0 +1,42 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 28/01/2022
+// Seção de Declarações
+var
+ op: caractere
+num, cont, continuar: inteiro
+inicio
+// Seção de Comandos
+escreval ("")
+   escreval ("------------")
+   escreval (" M  E  N  U ")
+   escreval ("------------")
+   escreval ("|XXXXXXXXXX|")
+
+         escreval ("-------------------------------------")
+         escreva ("Escreva até quanto você quer contar: ")
+         leia (num)
+         escreval ("-------------------------------------")
+                       cont <- 1
+                       repita
+                             escreval (cont, "...")
+                             cont <- cont + 1
+                       ate (cont > num)
+         escolha
+                repita
+                escreval ("Você quer continuar a contagem? [S/N]")
+                leia (op)
+         fimescolha
+                escreval ("Até quanto? ")
+                leia (continuar)
+                       cont <- num + 1
+                       repita
+                             escreval (cont, "...")
+                             cont <- cont + 1
+                       ate (cont > continuar)
+                ate (op = "N")
+escreval ("-------------------")
+escreval ("E N C E R R A N D O")
+escreval ("-------------------")
+fimalgoritmo

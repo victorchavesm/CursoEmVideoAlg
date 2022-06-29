@@ -1,0 +1,32 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 09/12/2021
+// Seção de Declarações 
+var
+cont, Q: inteiro
+nota, maior: real
+N, melhor: caractere
+inicio
+// Seção de Comandos
+   escrevaL ("---------------------")
+   escrevaL ("C O L É G I O   N A P")
+   escrevaL ("---------------------")
+   escreva ("Quantos alunos há na classe? ")
+   leia (Q)
+   escreval ("---------------------------------")
+   cont <- 1
+   enquanto (cont <= Q) faca
+            escreva ("Qual o nome do", cont, "o. aluno? ")
+            Leia (N)
+            escreva ("Qual a nota de ", N, "? ")
+            Leia (nota)
+                 se (nota > maior) entao
+                    maior <- nota
+                    melhor <- N
+                 fimse
+            escreval ("---------------------------------")
+            cont <- cont + 1
+   fimenquanto
+   escreva ("O melhor aproveitamento foi de ", melhor, " e sua nota foi ", maior)
+fimalgoritmo

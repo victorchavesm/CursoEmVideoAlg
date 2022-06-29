@@ -1,0 +1,34 @@
+algoritmo "diadamulher"
+// Função :
+// Autor :
+// Data : 24/11/2021
+// Seção de Declarações 
+var
+nome: caractere
+S, desc, comp, final: real
+inicio
+// Seção de Comandos 
+escreval ("-------------------------")
+escreval ("        R E N N E R      ")
+escreval ("-------------------------")
+escreva ("Qual seu nome? ")
+leia (nome)
+escreval ("Como você se identifica? Digite ")
+escreval (" [1] para Homem")
+escreval (" [2] para Mulher")
+Leia (S)
+escolha S
+        caso 1
+        desc <- 5/100
+        caso 2
+        desc <- 13/100
+fimescolha
+escreva ("Qual foi o valor da sua compra? R$ ")
+leia (comp)
+final <- comp - (comp * desc)
+escreval (nome, ", o valor final da sua compra com o desconto ficou R$", final:9:2)
+escreval ("-------------------------")
+escreval ("        V O L T E        ")
+escreval ("       S E M P R E       ")
+escreval ("-------------------------")
+fimalgoritmo

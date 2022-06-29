@@ -1,0 +1,23 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 19/11/2021
+// Seção de Declarações 
+var
+pd, pt: real
+anos, ano, dia, fd: inteiro
+inicio
+// Seção de Comandos
+   escreval ("-------------------------")
+   escreval ("PROGRAMA ANTI TABAGISTA")
+   escreval ("-------------------------")
+   escreval ("Quantos cigarros você fuma por dia?")
+   leia (fd)
+   escreval ("Há quantos anos você fuma? ")
+   leia (anos)
+   dia <- 1440
+   ano <- anos * 365
+   pd <- fd * 10
+   pt <- (pd/dia) * ano
+   escreva ("Você perdeu ", pt:5:0, " dias de vida")
+fimalgoritmo

@@ -1,0 +1,44 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 19/11/2021
+// Seção de Declarações 
+var
+aluno: caractere
+nota1, nota2, media: real
+inicio
+// Seção de Comandos 
+
+   escreval ("------------")
+   escreval ("COLÉGIO NAP")
+   escreval ("------------")
+   escreval ("Digite o nome do aluno: ")
+   leia (aluno)
+   escreval ("Digite a primeira nota do aluno: ")
+   leia (nota1)
+   escreval ("Digite a segunda nota do aluno: ")
+   leia (nota2)
+   media <- (nota1 + nota2) / 2
+   escreval ("---------------------")
+   escreval ("A média de ", aluno, " é: ", media)
+
+   se (media >= 9) e (media <= 10) entao
+      escreval (" APROVEITAMENTO: A")
+              fimse
+   se (media >= 8) e (media < 9) entao
+      escreval ("APROVEITAMENTO: B")
+              fimse
+   se (media >= 7) e (media < 8) entao
+      escreval ("APROVEITAMENTO: C")
+               fimse
+   se (media >= 6) e (media <7) entao
+      escreval ("APROVEITAMENTO: D")
+               fimse
+   se (media >=5) e (media <= 6) entao
+      escreval ("APROVEITAMENTO: E")
+               fimse
+   se (media < 5) entao
+      escreval ("APROVEITAMENTO: F")
+               fimse
+   escreva ("----------------------")
+fimalgoritmo
